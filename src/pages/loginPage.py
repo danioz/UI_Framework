@@ -12,15 +12,6 @@ class LoginPage(BasePage):
     def __init__(self):
         super().__init__()
 
-    def getUsername(self):
-        return self.__INPUT_USERNAME
-
-    def getPassword(self):
-        return self.__INPUT_PASSWORD
-
-    def getLoginBtn(self):
-        return self.__BTN_LOGIN
-
     def getErrorMsg(self):
         return self.__ERROR_MSG.getText()
 
