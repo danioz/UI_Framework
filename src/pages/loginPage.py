@@ -41,3 +41,12 @@ class LoginPage(BasePage):
             input = UiElement.fromWebElement(element).getAttribute('id')
             inputs.append(input)
         return inputs
+
+    def getUsername(self):
+        return self.__INPUT_USERNAME
+
+    def getPassword(self):
+        return self.__INPUT_PASSWORD
+
+    def getLoginBtn(self):
+        return self.__BTN_LOGIN
